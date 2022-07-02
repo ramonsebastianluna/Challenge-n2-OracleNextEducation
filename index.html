@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura Challenge n°2</title>
+    <link rel="stylesheet" href="css/Normalize-v8.0.1.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="content_logo">
+        <img src="images/Alura.svg" alt="logo Alura" class="img_logo">
+    </div>
+
+    <!--Menú principal-->
+    <div class="content_menuP">
+        <button type="button" id="button_inicio">Iniciar juego</button>
+        <button type="button" id="button_agregarPalabra">Agregar nueva palabra</button>
+    </div>
+
+    <!--Juego Ahorcado-->
+    <form id="ahorcado">
+        <div class="content_verificaLetra">
+            <input id="ingresa_letra" maxLength= 1 placeholder="Ingrese una letra aquí"></input>
+            <button type="button" id="button_comprobarLetra">Comprobar letra</button>
+        </div>
+        <div class="indicador_intentos">
+            Intentos:
+            <div class="num_intentos"></div>
+        </div>
+        <canvas width="600" height="400"></canvas>
+        <div class="content_button">
+            <button type="button" id="button_nuevoJuego">Nuevo Juego</button>
+            <button type="button" id="button_desistir">Desistir</button>
+        </div>
+    </form>
+
+    <!--Menú agregar palabra-->
+    <form id="agregar_palabra">
+        <input id="ingresa_palabraNueva" maxLength= 8 placeholder="Ingrese una palabra aquí"></input>
+        <div class="frame_2">
+            <img src="images/Exclamación.svg" alt="Exclamación" class="img2">
+            <p>Máx. de 8 letras</p>        
+        </div>
+        <div class="content_button">
+            <button type="button" id="button_guardarYEmpezar">Guardar y empezar</button>
+            <button type="button" id="button_cancelarPalabra">Cancelar</button>
+        </div>
+    </form>
+
+    <!--Footer con link redes sociales-->
+    <footer>
+        <div class="p_3">
+            <p class="p_footer">© 2022 - Ramón Sebastián Luna</p>
+            <a href="https://github.com/ramonsebastianluna" target="_blank">
+                <img src="images/github.png" alt="github" class="github">
+            </a>
+            <a href="https://www.linkedin.com/in/ramonsebastianluna/" target="_blank">
+                <img src="images/linkedin.png" alt="linkedin" class="linkedin">
+            </a>
+        </div> 
+    </footer>
+
+    <!--Archivos JS-->
+    <script type="text/javascript" src="js/logicaCanvas.js"></script>
+    <script type="text/javascript" src="js/logicaJuego.js"></script>
+</body>
+</html>

@@ -1,0 +1,289 @@
+html{
+    background-color: #E5E5E5;
+    height: 639px;
+}
+
+body{
+    width: 55%;
+    height: 90%;
+    background-color: #F3F5FC;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    position: relative;
+}
+.content_logo{
+    width: 90px;
+    height: 42px;
+    box-sizing: border-box;
+    text-align: center;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.img_logo{
+    width: 20px;
+    height: 30px;
+    margin-top: 5px;
+}
+
+/*Menú principal*/
+.content_menuP{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+}
+
+#button_inicio{
+    width: 160px;
+    height: 60px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: #0A3871;
+    border: none;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+    color: #FFFFFF;
+    display: block;  
+}
+
+#button_inicio:hover {
+    opacity: 0.8;
+}
+
+#button_agregarPalabra{
+    width: 160px;
+    height: 35px;
+    border: 1px solid #0A3871;
+    border-radius: 10px;
+    background-color: #D8DFE8;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+    color: #0A3871;
+}
+
+#button_agregarPalabra:hover{
+    background-color: #C7CDD6;
+}
+
+/*Juego ahorcado*/
+.content_verificaLetra{
+    height: 35px;
+}
+
+input {
+    border: none;
+    background-color: transparent;
+    resize: none;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #0A3871;
+    outline: none;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+::placeholder{
+    font-family: 'Inter', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #0A3871;
+    text-transform: lowercase;
+}
+
+.indicador_intentos {
+    height: 80%;
+    width: 10%;
+    display: block;
+    padding-top: 50px;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+
+canvas{
+    display: inline;
+    position: absolute;
+    top: 8%;
+    left: 10%;
+}
+
+/*Juego ahorcado*/
+#ahorcado {
+    width: 90%;
+    height: 85%;
+    display: none;
+    position: absolute;
+    top: 5%;
+    bottom: 5%;
+    right: 5%;
+    text-align: center;
+}
+
+.frame_1{
+    width: 100%;
+    height: 30px;  
+}
+
+.img2{
+    width: 10px;
+    height: 10px;
+}
+
+.frame_1 p{
+    display: inline-block;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+    color: #0A3871;
+}
+
+.content_button{
+    text-align: center;
+}
+
+#button_nuevoJuego, #button_comprobarLetra{
+    width: 160px;
+    height: 35px;
+    border-radius: 10px;
+    background-color: #0A3871;
+    border: none;
+    margin-right: 10px;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+    color: #FFFFFF;
+}
+
+#button_nuevoJuego:hover, #button_comprobarLetra:hover{
+    opacity: 0.8;
+}
+
+#button_desistir{
+    width: 160px;
+    height: 35px;
+    border: 1px solid #0A3871;
+    border-radius: 10px;
+    background-color: #D8DFE8;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+    color: #0A3871;
+}
+
+#button_desistir:hover{
+    background-color: #C7CDD6;
+}
+
+
+/*Menú agregar palabra*/
+#agregar_palabra{
+    width: 90%;
+    height: 85%;
+    display: none;
+    text-align: center;
+    margin: 5%;
+}
+
+#ingresa_palabraNueva{
+    margin: 30% 0 28% 0;
+}
+
+.frame_2{
+    width: 75%;
+    height: 30px;
+    text-align: left;
+    padding-left: 25%;
+}
+
+.frame_2 p{
+    display: inline-block;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+    color: #0A3871;
+}
+
+#button_guardarYEmpezar{
+    width: 160px;
+    height: 35px;
+    border-radius: 10px;
+    background-color: #0A3871;
+    border: none;
+    margin-right: 10px;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+    color: #FFFFFF;
+}
+
+#button_guardarYEmpezar:hover{
+    opacity: 0.8;
+}
+
+#button_cancelarPalabra{
+    width: 160px;
+    height: 35px;
+    border: 1px solid #0A3871;
+    border-radius: 10px;
+    background-color: #D8DFE8;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+    color: #0A3871;
+}
+
+#button_cancelarPalabra:hover{
+    background-color: #C7CDD6;
+}
+
+
+/*Footer con link redes sociales*/
+footer{
+    width: 100%;
+    position: absolute;
+    top: 100%;
+}
+
+.p_3{
+    font-family: 'Inter', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    color: #000000;
+    text-align: center;    
+}
+
+.p_3 p{
+    margin-top: 15px;
+    display: inline-block;
+    position: relative;
+}
+
+.p_footer {
+    position: absolute;
+    bottom: 5px;
+}
+
+.github{
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+    margin-right: 1px;
+}
+
+.linkedin{
+    width: 20px;
+    height: 20px;
+}
+
+a {
+    text-decoration: none;
+}
